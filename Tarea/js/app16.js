@@ -1,25 +1,11 @@
-let atleta1 = parseFloat(prompt("Ingrese el tiempo del primer atleta, por ejemplo, 1.30 minutos: "));
-let atleta2 = parseFloat(prompt("Ingrese el tiempo del segundo atleta, por ejemplo, 2.30 minutos: "));
+let atleta1 = parseFloat(prompt("Ingrese el tiempo del primer atleta en segundos: "));
+let atleta2 = parseFloat(prompt("Ingrese el tiempo del segundo atleta en segundos: "));
+let minuto1 = atleta1 / 60;
+let minuto2 = atleta2 / 60;
+let hora1 = atleta1 / 3600;
+let hora2 =  atleta2/ 3600;
 
-function calcularTiempoAtleta1(tiempo) {
-    let segundos = tiempo * 60;
-    let minutos = (segundos / 60);
-    let horas = (minutos / 60);
-    return [segundos, minutos, horas];
-}
-
-function calcularTiempoAtleta2(tiempo) {
-    let segundos = tiempo * 60;
-    let minutos = (segundos / 60);
-    let horas = (minutos / 60);
-    return [segundos, minutos, horas];
-}
-
-let [segundosAtleta1, minutosAtleta1, horasAtleta1] = calcularTiempoAtleta1(atleta1);
-let [segundosAtleta2, minutosAtleta2, horasAtleta2] = calcularTiempoAtleta2(atleta2);
-
-alert('El tiempo del atleta 1 es:\nHoras: ' + horasAtleta1 + '\nMinutos: ' + minutosAtleta1 + '\nSegundos: ' + segundosAtleta1);
-alert('El tiempo del atleta 2 es:\nHoras: ' + horasAtleta2 + '\nMinutos: ' + minutosAtleta2 + '\nSegundos: ' + segundosAtleta2);
-
-console.log('El tiempo del atleta 1 es:\nHoras: ' + horasAtleta1  + '\nMinutos: ' + minutosAtleta1 + '\nSegundos: ' + segundosAtleta1);
-console.log('El tiempo del atleta 2 es:\nHoras: ' + horasAtleta2  + '\nMinutos: ' + minutosAtleta2 + '\nSegundos: ' + segundosAtleta2);
+alert("El tiempo del primer atleta \n Segundo: " + atleta1 + '\n minutos:' + minuto1.toFixed(2) + '\nHoras:' + hora1.toFixed(2));
+alert("El tiempo del segundo atleta \n Segundo: " + atleta2 + '\n minutos:' + minuto2.toFixed(2) + '\nHoras:' + hora2.toFixed(2));
+console.log("El tiempo del primer atleta \n Segundo: " + atleta1 + '\n minutos:' + minuto1.toFixed(2) + '\nHoras:' + hora1.toFixed(2));
+console.log("El tiempo del segundo atleta \n Segundo: " + atleta2 + '\n minutos:' + minuto2.toFixed(2) + '\nHoras:' + hora2.toFixed(2));
